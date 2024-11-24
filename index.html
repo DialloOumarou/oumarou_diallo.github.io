@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Mon Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="boxed">
+            <div class="flex align_center space_between">
+
+                <button onclick="open_menu()" class="header_menu_mobile">
+                    <span><i class="ri-menu-fill"></i></span>
+                </button>
+
+                <a href="" class="header_logo">
+                    <img src="img/logo_html.png" alt="">
+                </a>
+
+                <ul class="header_menu">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#a_propos">A propos</a></li>
+                    <li><a href="#competences">Competences</a></li>
+                    <li><a href="#realisations">Realisations</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+
+        
+                
+                <button onclick="close_menu()" class="header_menu_mobile_exite" id="close_btn">
+                    <span><i class="ri-close-line"></i></span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="slider" id="accueil">
+        <img src="img/slider.jpg" alt="" class="slider_background">
+
+        <div class="slider_content">
+            <h1>Oumarou Diallo</h1>
+            <p>Web developper</p>
+
+                    
+            <ul class="profile__social">
+                <a  href="https://api.whatsapp.com/send?phone=+221704910082" target="_blank"  class="profile__social-link">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/oumarou-diallo-8278241a5/" target="_blank"  class="profile__social-link">
+                    <i class="ri-linkedin-box-line"></i>
+                </a>
+                <a href="https://github.com/DialloOumarou" target="_blank"  class="profile__social-link">
+                    <i class="ri-github-fill"></i>
+                </a>
+            </ul>
+                
+            <dib class="profile__buttons">
+                <a download   href="assets/pdf/Gianell-Cv.pdf" class="button">
+                    Download CV <i class="ri-download-line"></i>
+                </a>
+            </dib> 
+
+        </div>
+    
+
+
+    </div>
+
+    <div class="section mCenter" id="a_propos">
+        <div class="boxed">
+            <div class="flex toColumn">
+                <div class="w40 wm100">
+                    <h2>A propos de moi</h2>
+                </div>
+
+                <div class="w60 wm100">
+                    <p>Je suis un jeune développeur ambitieux, à la recherche d'opportunités stimulantes pour mettre en pratique ma passion et mes compétences. Diplômé en Génie Logiciel, je suis captivé par tout ce qui touche à l'univers du développement, qu'il s'agisse du web, du mobile ou même de l'intelligence artificielle. Toujours curieux et animé par l'envie de progresser, j'investis continuellement dans l'apprentissage et le perfectionnement de mes compétences pour relever de nouveaux défis technologiques.</p>        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section dark" id="competences">
+        <div class="boxed text__center">
+            <h2>Decouvrez mes competences</h2>
+
+            <div class="flex wrap gap20 space_between ">
+                <div class="w25  skill">
+                    <img  src="img/logo_html.png" alt="">
+                    <h3>HTML</h3>
+                </div>
+
+                <div class="w25  skill">
+                    <img src="img/logo_css.png" alt="">
+                    <h3>CSS</h3>
+                </div>
+
+                <div class="w25  skill">
+                    <img src="img/logo_js.png" alt="">
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="w25  skill">
+                    <img src="img/logo_php.png" alt="">
+                    <h3>PHP</h3>
+                </div>
+                
+                <div class="w25  skill">
+                    <img src="img/logo_laravel.png" alt="">
+                    <h3>Laravel</h3>
+                </div>
+
+                <div class="w25  skill">
+                    <img src="img/logo_git.png" alt="">
+                    <h3>Git</h3>
+                </div>
+ 
+            </div>
+        </div>
+    </div>
+
+    <div class="section"  id="realisations">
+        <div class="boxed text__center">
+            <h2>Mes realisations</h2>
+
+            <div class="flex wrap gap20 space_between">
+
+                <div class="w47 wm47 realisations">
+                    <a href="">
+                        <img src="img/creation.jpg" alt="">
+                        <h3>Site de Cuisine</h3>
+                        <i class="ri-link"></i>
+                    </a>
+                </div>
+
+                <div class="w47  wm47 realisations">
+                    <a href="">
+                        <img src="img/creation.jpg" alt="">
+                        <h3>Site de Cuisine</h3>
+                        <i class="ri-link"></i>
+                    </a>
+                </div>
+
+                <div class="w47 wm47 realisations">
+                    <a href="#">
+                        <img src="img/creation.jpg" alt="">
+                        <h3>Site de Cuisine</h3>
+                        <i class="ri-link"></i>
+                    </a>
+                </div>
+
+                <div class="w47 wm47 realisations">
+                    <a href="">
+                        <img src="img/creation.jpg" alt="">
+                        <h3>Site de Cuisine et d'education peruvienne divine</h3>
+                        <i class="ri-link"></i>
+                    </a>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="section dark"  id="contacts">
+        <div class="boxed text__center">
+            <h2>Contactez-moi</h2>
+
+            <div class="flex space_between toColumn mGap20 gap20">
+                <div class="w32 wm100 contact">
+                    <span><i class="ri-mail-line icon"></i></span>
+                    <span class="contacts_label">E-mail:</span>
+                    <span class="email_value">oumarou704910082@gmail.com</span>
+                </div>
+
+                <div class="w32 wm100 contact">
+                    <span><i class="ri-phone-line icon"></i></i></span>
+                    <span class="contacts_label">Telephone:</span>
+                    <span class="email_value">+221 78-581-66-79</span>
+                </div>
+
+                <div class="w32 wm100 contact">
+                    <span><i class="ri-whatsapp-line icon"></i></i></span>
+                    <span class="contacts_label">Whatsapp:</span>
+                    <span class="email_value">+221 70-491-00-82</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/app.js"></script>
+</html>
