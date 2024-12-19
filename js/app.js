@@ -50,3 +50,27 @@ menuLinks.forEach(link => {
         }
     });
 });
+
+
+
+// Récupérer tous les boutons et les compétences
+const buttons = document.querySelectorAll('.filter-btn');
+const skills = document.querySelectorAll('.skill');
+
+// Ajouter un événement de clic à chaque bouton
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+
+        // Masquer toutes les compétences
+        skills.forEach(skill => {
+            skill.classList.remove('show');
+        });
+
+        // Afficher uniquement les compétences correspondant à la catégorie
+        const categorySkills = document.querySelectorAll(`.${category}`);
+        categorySkills.forEach(skill => {
+            skill.classList.add('show');
+        });
+    });
+});

@@ -198,7 +198,7 @@ p{
 }
 
 .skill img{
-    width: 100px;
+    width: auto;
     height: 100px;
     aspect-ratio: 1/1;
     object-fit: contain;
@@ -243,6 +243,12 @@ p{
     border-radius: 15px;
 
 }
+
+.realisations i:hover {
+  
+    font-size: 33px;
+
+} 
 
 .num1{
     top: 75%;
@@ -361,6 +367,53 @@ header{
     display: none;
 }
 
+/* Conteneur de la grille */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    grid-template-rows: repeat(2, auto); /* 2 lignes */
+    gap: 20px; /* Espacement entre les colonnes et les lignes */
+    justify-content: center; /* Centre la grille horizontalement */
+}
+
+
+
+/* Buttons */
+.buttons {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: var(--first-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter-btn:hover {
+    background-color: var(--first-color-dark);
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+/* Hidden skills */
+.skill {
+    display: none; /* Par défaut, toutes les compétences sont cachées */
+}
+
+/* Show skills when active */
+.skill.show {
+    display: block;
+}
 
 
 
@@ -491,6 +544,8 @@ header{
     .skill{
        justify-content: center;
        text-align: center;
+       padding-left: 10px;
+       padding-left: 10px;
     }
 
     .skill img{
