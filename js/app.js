@@ -52,6 +52,17 @@ menuLinks.forEach(link => {
 });
 
 
+const LanguagesSkills = document.querySelectorAll(`.languages`);
+LanguagesSkills.forEach(skill => {
+    skill.classList.add('show');
+});
+
+
+const languagebtn = document.getElementById('languagebtn');
+ // Ajouter la classe active au bouton cliqué
+languagebtn.classList.add('active');
+
+
 
 // Récupérer tous les boutons et les compétences
 const buttons = document.querySelectorAll('.filter-btn');
@@ -74,3 +85,19 @@ buttons.forEach(button => {
         });
     });
 });
+
+
+// Sélectionner tous les boutons avec la classe .filter-btn
+const btns = document.querySelectorAll('.filter-btn');
+
+// Ajouter un gestionnaire d'événements à chaque bouton
+btns.forEach(button => {
+  button.addEventListener('click', () => {
+    // Réinitialiser les styles des autres boutons
+    btns.forEach(btn => btn.classList.remove('active'));
+
+    // Ajouter la classe active au bouton cliqué
+    button.classList.add('active');
+  });
+});
+
