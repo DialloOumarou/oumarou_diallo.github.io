@@ -374,15 +374,15 @@ header{
     display: none;
 }
 
-/* Conteneur de la grille */
+/* Conteneur de la grille 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
-    grid-template-rows: repeat(2, auto); /* 2 lignes */
-    gap: 20px; /* Espacement entre les colonnes et les lignes */
-    justify-content: center; /* Centre la grille horizontalement */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto);
+    gap: 20px; 
+    justify-content: center;
 }
-
+*/
 
 
 /* Buttons */
@@ -679,14 +679,14 @@ header{
         font-size: 15px;
         text-overflow: ellipsis;
     }
-
+/* 
     .realisations i {
        
         font-size: 20px;
         padding: 5px;
         border-radius: 5px;
     
-    }
+    } */
 
     .num1{
         top: 72%;
