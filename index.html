@@ -9,342 +9,352 @@
     <title>Mon Portfolio</title>
 </head>
 <body>
-    <header>
-        <div class="boxed">
-            <div class="flex align_center space_between">
 
-                <button onclick="open_menu()" class="header_menu_mobile">
-                    <span><i class="ri-menu-fill"></i></span>
-                </button>
+    <div class="main_div">
+        <header>
+            <div class="boxed">
+                <div class="flex align_center space_between">
 
-                <a href="" class="header_logo">
-                    <img src="img/logo_html.png" alt="">
-                </a>
+                    <button onclick="open_menu()" class="header_menu_mobile">
+                        <span><i class="ri-menu-fill"></i></span>
+                    </button>
 
-                <ul class="header_menu">
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#a_propos">A propos</a></li>
-                    <li><a href="#competences">Competences</a></li>
-                    <li><a href="#realisations">Realisations</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
+                    <a href="" class="header_logo">
+                        <img src="img/logo_html.png" alt="">
+                    </a>
 
-        
-                
-                <button onclick="close_menu()" class="header_menu_mobile_exite" id="close_btn">
-                    <span><i class="ri-close-line"></i></span>
-                </button>
+                    <ul class="header_menu">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#a_propos">A propos</a></li>
+                        <li><a href="#competences">Competences</a></li>
+                        <li><a href="#realisations">Realisations</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
 
-            </div>
-        </div>
-    </header>
-
-    <div class="slider" id="accueil">
-        <img src="img/slider.jpg" alt="" class="slider_background">
-
-        <div class="slider_content">
-            <h1>Oumarou Diallo</h1>
-            <p>Web developper</p>
-
+            
                     
-            <ul class="profile__social">
-                <a  href="https://api.whatsapp.com/send?phone=+221704910082" target="_blank"  class="profile__social-link">
-                    <i class="ri-whatsapp-line"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/oumarou-diallo-8278241a5/" target="_blank"  class="profile__social-link">
-                    <i class="ri-linkedin-box-line"></i>
-                </a>
-                <a href="https://github.com/DialloOumarou" target="_blank"  class="profile__social-link">
-                    <i class="ri-github-fill"></i>
-                </a>
-            </ul>
-                
-            <dib class="profile__buttons">
-                <a download   href="pdf/Cv_Oumarou_last_V.pdf" class="download_btn">
-                    Download CV <i class="ri-download-line"></i>
-                </a>
-            </dib> 
+                    <button onclick="close_menu()" class="header_menu_mobile_exite" id="close_btn">
+                        <span><i class="ri-close-line"></i></span>
+                    </button>
 
-        </div>
-    
-
-
-    </div>
-
-    <div class="section mCenter" id="a_propos">
-        <div class="boxed">
-            <div class="flex toColumn">
-                <div class="w40 wm100">
-                    <h2>A propos de moi</h2>
-                </div>
-
-                <div class="w60 wm100">
-                    <p>Je suis un jeune développeur ambitieux, à la recherche d'opportunités stimulantes pour mettre en pratique ma passion et mes compétences. Diplômé en Génie Logiciel, je suis captivé par tout ce qui touche à l'univers du développement, qu'il s'agisse du web, du mobile ou même de l'intelligence artificielle. Toujours curieux et animé par l'envie de progresser, j'investis continuellement dans l'apprentissage et le perfectionnement de mes compétences pour relever de nouveaux défis technologiques.</p>        
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="section dark" id="competences">
-        <div class="boxed text__center">
-            <h2>Découvrez mes compétences</h2>
+        </header>
+
+   
     
-            <!-- Buttons for filtering -->
-            <div class="buttons">
-                <button class="filter-btn" data-category="languages" id="languagebtn">Langages</button>
-                <button class="filter-btn" data-category="frameworks">Frameworks</button>
-                <button class="filter-btn" data-category="others">Autres</button>
+
+
+        <div class="slider" id="accueil">
+            <!-- <img src="img/slider.jpg" alt="" class="slider_background"> -->
+    
+            <div class="slider_content">
+                <h1>Oumarou Diallo</h1>
+                <p>Web developper</p>
+    
+                        
+                <ul class="profile__social">
+                    <a  href="https://api.whatsapp.com/send?phone=+221704910082" target="_blank"  class="profile__social-link">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/oumarou-diallo-8278241a5/" target="_blank"  class="profile__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/DialloOumarou" target="_blank"  class="profile__social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </ul>
+                    
+                <dib class="profile__buttons">
+                    <a download   href="pdf/Cv_Oumarou_last_V.pdf" class="download_btn">
+                        Download CV <i class="ri-download-line"></i>
+                    </a>
+                </dib> 
+    
             </div>
+        
     
-            <!-- Grid container -->
-            <div class="grid-container">
-                <!-- Langages -->
-                <div class="skill languages">
-                    <img src="img/logo_html.png" alt="">
-                    <h3>HTML</h3>
-                </div>
-                <div class="skill languages">
-                    <img src="img/logo_css.png" alt="">
-                    <h3>CSS</h3>
-                </div>
-                <div class="skill languages">
-                    <img src="img/logo_js.png" alt="">
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill languages">
-                    <img src="img/logo_php.png" alt="">
-                    <h3>PHP</h3>
-                </div>
-                <div class="skill languages">
-                    <img src="img/logo_python.png" alt="">
-                    <h3>Python</h3>
-                </div>
-                <div class="skill languages">
-                    <img src="img/logo_java.png" alt="">
-                    <h3>Java</h3>
-                </div>
     
-             
+        </div>
     
-                <!-- Frameworks -->
-                <div class="skill frameworks">
-                    <img src="img/logo_laravel.png" alt="">
-                    <h3>Laravel</h3>
-                </div>
-                <div class="skill frameworks">
-                    <img src="img/logo_reactjs.png" alt="">
-                    <h3>React.js</h3>
-                </div>
-                <div class="skill frameworks">
-                    <img src="img/logo_nodejs.png" alt="">
-                    <h3>Node.js</h3>
-                </div>
+        <div class="section  a_propos_section" id="a_propos">
+          
+                <div class="flex toColumn">
+                    <div class="w40 wm100">
+                        <h2>A propos de moi</h2>
+                    </div>
     
-                
-    
-                <!-- Autres -->
-                <div class="skill others">
-                    <img src="img/logo_git.png" alt="">
-                    <h3>Git</h3>
+                    <div class="w60 wm100">
+                        <p>Je suis un jeune développeur ambitieux, à la recherche d'opportunités stimulantes pour mettre en pratique ma passion et mes compétences. Diplômé en Génie Logiciel, je suis captivé par tout ce qui touche à l'univers du développement, qu'il s'agisse du web, du mobile ou même de l'intelligence artificielle. Toujours curieux et animé par l'envie de progresser, j'investis continuellement dans l'apprentissage et le perfectionnement de mes compétences pour relever de nouveaux défis technologiques.</p>        
+                    </div>
                 </div>
        
-              
-                <div class="skill others">
-                    <img src="img/logo_github.png" alt="">
-                    <h3>GitHub</h3>
-                </div>
-                <div class="skill others">
-                    <img src="img/logo_mysql.png" alt="">
-                    <h3>MySQL</h3>
-                </div>
-                <div class="skill others">
-                    <img src="img/logo_postgresql.png" alt="">
-                    <h3>PostgreSQL</h3>
-                </div>
-                <div class="skill others">
-                    <img src="img/logo_uml.png" alt="">
-                    <h3>UML</h3>
-                </div>
-                <div class="skill others">
-                    <img src="img/logo_trello.png" alt="">
-                    <h3>Trello</h3>
-                </div>
-            </div>
         </div>
-    </div>
-    
-    
+        <div class="section dark  competences_section" id="competences" >
 
-    <div class="section"  id="realisations">
-        <div class="boxed text__center">
-            <h2>Mes realisations</h2>
-
-            <div class="card-container">
-                <div class="card"  style="padding-top:10%;">
-                  <img src="img/rock_paper_scisor_game.jpg" alt="" class="card-image">
-                  <div class="card-content">
-                    <h2 class="project-title">rock paper scisor game</h2>
-                    <p class="project-description">
-                      This is a short description of project 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rerum quae magni corporis totam, quaerat ullam recusandae ut suscipit omnis ipsa veniam unde, error porro accusantium! Corrupti iusto commodi eos?
-                    </p>
-                    <div class="project-languages">
-                        <span class="language-badge">HTML</span>
-                        <span class="language-badge">CSS</span>
-                        <span class="language-badge">JavaScript</span>
-                    </div>
-                      
-                    <div class="card-links">
-                        <a href="https://github.com/DialloOumarou/pierre_feuille_sciseau_game/" target="_blank" class="card-link">GitHub</a>
-                        <a href="https://diallooumarou.github.io/pierre_feuille_sciseau_game/" target="_blank" class="card-link">Live Demo</a>
-                    </div>
-                  </div>
+                <h2>Découvrez mes compétences</h2>
+        
+                <!-- Buttons for filtering -->
+                <div class="buttons">
+                    <button class="filter-btn" data-category="languages" id="languagebtn">Langages</button>
+                    <button class="filter-btn" data-category="frameworks">Frameworks</button>
+                    <button class="filter-btn" data-category="others">Autres</button>
                 </div>
-                
-                <div class="card"  style="padding-top:10%;">
-                  <img src="img/todo_list.jpg" alt="Project 2 Screenshot" class="card-image">
-                  <div class="card-content">
-                    <h2 class="project-title">Todo List </h2>
-                    <p class="project-description">
-                      This is a short description of project 2.
-                    </p>
-                    <div class="project-languages">
-                        <span class="language-badge">HTML</span>
-                        <span class="language-badge">CSS</span>
-                        <span class="language-badge">reactjs</span>
+        
+                <!-- Grid container -->
+                <div class="grid-container">
+                    <!-- Langages -->
+                    <div class="skill languages">
+                        <img src="img/logo_html.png" alt="">
+                        <h3>HTML</h3>
                     </div>
-                    <div class="card-links">
-                      <a href="https://github.com/DialloOumarou/react_todo_list" target="_blank" class="card-link">GitHub</a>
-                      <a href=" https://diallooumarou.github.io/react_todo_list/" target="_blank" class="card-link">Live Demo</a>
+                    <div class="skill languages">
+                        <img src="img/logo_css.png" alt="">
+                        <h3>CSS</h3>
                     </div>
-                  </div>
-                </div>
-                
-                <div class="card"  style="padding-top:10%;">
-                  <img src="img/stop_watch.jpg" alt="Project 3 Screenshot" class="card-image">
-                  <div class="card-content">
-                    <h2 class="project-title">Stop watch</h2>
-                    <p class="project-description">
-                      This is a short description of project 3.
-                    </p>
-                    <div class="project-languages">
-                        <span class="language-badge">HTML</span>
-                        <span class="language-badge">CSS</span>
-                        <span class="language-badge">reactjs</span>
+                    <div class="skill languages">
+                        <img src="img/logo_js.png" alt="">
+                        <h3>JavaScript</h3>
                     </div>
-                    <div class="card-links">
-                        <a href="https://github.com/DialloOumarou/react_stop_watch" target="_blank" class="card-link">GitHub</a>
-                        <a href=" https://diallooumarou.github.io/react_stop_watch/" target="_blank" class="card-link">Live Demo</a>
+                    <div class="skill languages">
+                        <img src="img/logo_php.png" alt="">
+                        <h3>PHP</h3>
                     </div>
-                  </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="card-video" style="padding-top:10%;">
-                        <iframe 
-                            src="https://player.vimeo.com/video/1043106137?title=0&byline=0&portrait=0" 
-                            frameborder="0" 
-                            allow="autoplay; fullscreen; picture-in-picture" 
-                            allowfullscreen 
-                            style="top:0;left:0;width:100%;height:100%;"></iframe>
+                    <div class="skill languages">
+                        <img src="img/logo_python.png" alt="">
+                        <h3>Python</h3>
                     </div>
-                    <div class="card-content">
-                        <h2 class="project-title">Chat App</h2>
-                        <p class="project-description">
-                            This is a short description of project 1.
-                        </p>
-                        <div class="project-languages">
-                            <span class="language-badge">HTML</span>
-                            <span class="language-badge">Boostrap</span>
-                            <span class="language-badge">PHP</span>
-                            <span class="language-badge">MySQL</span>
-                        </div>
-                        <div class="card-links">
-                            <a href="https://github.com/DialloOumarou/php_chat_app" target="_blank" class="card-link">GitHub</a>
-                        </div>
+                    <div class="skill languages">
+                        <img src="img/logo_java.png" alt="">
+                        <h3>Java</h3>
                     </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-video" style="padding-top:10%;">
-                        <iframe 
-                            src="https://player.vimeo.com/video/1043106498?title=0&byline=0&portrait=0" 
-                            frameborder="0" 
-                            allow="autoplay; fullscreen; picture-in-picture" 
-                            allowfullscreen 
-                            style="top:0;left:0;width:100%;height:100%;"></iframe>
+        
+                 
+        
+                    <!-- Frameworks -->
+                    <div class="skill frameworks">
+                        <img src="img/logo_laravel.png" alt="">
+                        <h3>Laravel</h3>
                     </div>
-                    <div class="card-content">
-                        <h2 class="project-title">Crud App</h2>
-                        <p class="project-description">
-                            This is a short description of project 1.
-                        </p>
-                        <div class="project-languages">
-                            <span class="language-badge">HTML</span>
-                            <span class="language-badge">Boostrap</span>
-                            <span class="language-badge">PHP</span>
-                            <span class="language-badge">MySQL</span>
-                        </div>
-                        <div class="card-links">
-                            <a href="https://github.com/DialloOumarou/php_crud_app" target="_blank" class="card-link">GitHub</a>
-                        </div>
+                    <div class="skill frameworks">
+                        <img src="img/logo_reactjs.png" alt="">
+                        <h3>React.js</h3>
                     </div>
-                </div>
-
-                   <div class="card">
+                    <div class="skill frameworks">
+                        <img src="img/logo_nodejs.png" alt="">
+                        <h3>Node.js</h3>
+                    </div>
+        
                     
+        
+                    <!-- Autres -->
+                    <div class="skill others">
+                        <img src="img/logo_git.png" alt="">
+                        <h3>Git</h3>
+                    </div>
+           
+                  
+                    <div class="skill others">
+                        <img src="img/logo_github.png" alt="">
+                        <h3>GitHub</h3>
+                    </div>
+                    <div class="skill others">
+                        <img src="img/logo_mysql.png" alt="">
+                        <h3>MySQL</h3>
+                    </div>
+                    <div class="skill others">
+                        <img src="img/logo_postgresql.png" alt="">
+                        <h3>PostgreSQL</h3>
+                    </div>
+                    <div class="skill others">
+                        <img src="img/logo_uml.png" alt="">
+                        <h3>UML</h3>
+                    </div>
+                    <div class="skill others">
+                        <img src="img/logo_trello.png" alt="">
+                        <h3>Trello</h3>
+                    </div>
+                </div>
+        </div>
+        
+        
+    
+        <div class="section realisation_section"  id="realisations">
+           
+                <h2>Mes realisations</h2>
+    
+                <div class="card-container">
+                    <div class="card"  style="padding-top:10%;">
+                      <img src="img/rock_paper_scisor_game.jpg" alt="" class="card-image">
+                      <div class="card-content">
+                        <h2 class="project-title">rock paper scisor game</h2>
+                        <p class="project-description">
+                          This is a short description of project 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rerum quae magni corporis totam, quaerat ullam recusandae ut suscipit omnis ipsa veniam unde, error porro accusantium! Corrupti iusto commodi eos?
+                        </p>
+                        <div class="project-languages">
+                            <span class="language-badge">HTML</span>
+                            <span class="language-badge">CSS</span>
+                            <span class="language-badge">JavaScript</span>
+                        </div>
+                          
+                        <div class="card-links">
+                            <a href="https://github.com/DialloOumarou/pierre_feuille_sciseau_game/" target="_blank" class="card-link">GitHub</a>
+                            <a href="https://diallooumarou.github.io/pierre_feuille_sciseau_game/" target="_blank" class="card-link">Live Demo</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="card"  style="padding-top:10%;">
+                      <img src="img/todo_list.jpg" alt="Project 2 Screenshot" class="card-image">
+                      <div class="card-content">
+                        <h2 class="project-title">Todo List </h2>
+                        <p class="project-description">
+                          This is a short description of project 2.
+                        </p>
+                        <div class="project-languages">
+                            <span class="language-badge">HTML</span>
+                            <span class="language-badge">CSS</span>
+                            <span class="language-badge">reactjs</span>
+                        </div>
+                        <div class="card-links">
+                          <a href="https://github.com/DialloOumarou/react_todo_list" target="_blank" class="card-link">GitHub</a>
+                          <a href=" https://diallooumarou.github.io/react_todo_list/" target="_blank" class="card-link">Live Demo</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="card"  style="padding-top:10%;">
+                      <img src="img/stop_watch.jpg" alt="Project 3 Screenshot" class="card-image">
+                      <div class="card-content">
+                        <h2 class="project-title">Stop watch</h2>
+                        <p class="project-description">
+                          This is a short description of project 3.
+                        </p>
+                        <div class="project-languages">
+                            <span class="language-badge">HTML</span>
+                            <span class="language-badge">CSS</span>
+                            <span class="language-badge">reactjs</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/DialloOumarou/react_stop_watch" target="_blank" class="card-link">GitHub</a>
+                            <a href=" https://diallooumarou.github.io/react_stop_watch/" target="_blank" class="card-link">Live Demo</a>
+                        </div>
+                      </div>
+                    </div>
+    
+    
+                    <div class="card">
                         <div class="card-video" style="padding-top:10%;">
-                            <iframe src="https://player.vimeo.com/video/1043106619?title=0&ampbyline=0&ampportrait=0"
-                                frameborder="0"
+                            <iframe 
+                                src="https://player.vimeo.com/video/1043106137?title=0&byline=0&portrait=0" 
+                                frameborder="0" 
                                 allow="autoplay; fullscreen; picture-in-picture" 
                                 allowfullscreen 
-                                style="top:0;left:0;width:100%;height:100%;">
-                            </iframe>
+                                style="top:0;left:0;width:100%;height:100%;"></iframe>
                         </div>
-                    <div class="card-content">
-                        <h2 class="project-title">Election App</h2>
-                        <p class="project-description">
-                            This is a short description of project 1.
-                        </p>
-                        <div class="project-languages">
-                            <span class="language-badge">HTML</span>
-                            <span class="language-badge">Boostrap</span>
-                            <span class="language-badge">Laravel</span>
-                            <span class="language-badge">MySQL</span>
+                        <div class="card-content">
+                            <h2 class="project-title">Chat App</h2>
+                            <p class="project-description">
+                                This is a short description of project 1.
+                            </p>
+                            <div class="project-languages">
+                                <span class="language-badge">HTML</span>
+                                <span class="language-badge">Boostrap</span>
+                                <span class="language-badge">PHP</span>
+                                <span class="language-badge">MySQL</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://github.com/DialloOumarou/php_chat_app" target="_blank" class="card-link">GitHub</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-              </div>            
-        </div>
-    </div>
-
     
-
-    <div class="section dark"  id="contacts">
-        <div class="boxed text__center">
-            <h2>Contactez-moi</h2>
-
-            <div class="flex space_between toColumn mGap20 gap20">
-                <div class="w32 wm100 contact">
-                    <span><i class="ri-mail-line icon"></i></span>
-                    <span class="contacts_label">E-mail:</span>
-                    <span class="email_value">oumarou704910082@gmail.com</span>
-                </div>
-
-                <div class="w32 wm100 contact">
-                    <span><i class="ri-phone-line icon"></i></i></span>
-                    <span class="contacts_label">Telephone:</span>
-                    <span class="email_value">+221 78-581-66-79</span>
-                </div>
-
-                <div class="w32 wm100 contact">
-                    <span><i class="ri-whatsapp-line icon"></i></i></span>
-                    <span class="contacts_label">Whatsapp:</span>
-                    <span class="email_value">+221 70-491-00-82</span>
-                </div>
-            </div>
+                    <div class="card">
+                        <div class="card-video" style="padding-top:10%;">
+                            <iframe 
+                                src="https://player.vimeo.com/video/1043106498?title=0&byline=0&portrait=0" 
+                                frameborder="0" 
+                                allow="autoplay; fullscreen; picture-in-picture" 
+                                allowfullscreen 
+                                style="top:0;left:0;width:100%;height:100%;"></iframe>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="project-title">Crud App</h2>
+                            <p class="project-description">
+                                This is a short description of project 1.
+                            </p>
+                            <div class="project-languages">
+                                <span class="language-badge">HTML</span>
+                                <span class="language-badge">Boostrap</span>
+                                <span class="language-badge">PHP</span>
+                                <span class="language-badge">MySQL</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://github.com/DialloOumarou/php_crud_app" target="_blank" class="card-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                       <div class="card">
+                        
+                            <div class="card-video" style="padding-top:10%;">
+                                <iframe src="https://player.vimeo.com/video/1043106619?title=0&ampbyline=0&ampportrait=0"
+                                    frameborder="0"
+                                    allow="autoplay; fullscreen; picture-in-picture" 
+                                    allowfullscreen 
+                                    style="top:0;left:0;width:100%;height:100%;">
+                                </iframe>
+                            </div>
+                        <div class="card-content">
+                            <h2 class="project-title">Election App</h2>
+                            <p class="project-description">
+                                This is a short description of project 1.
+                            </p>
+                            <div class="project-languages">
+                                <span class="language-badge">HTML</span>
+                                <span class="language-badge">Boostrap</span>
+                                <span class="language-badge">Laravel</span>
+                                <span class="language-badge">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  </div>            
+            
         </div>
+    
+        
+    
+        <div class="section dark contact_section"  id="contacts">
+            
+                <h2>Contactez-moi</h2>
+    
+                <div class="flex  toColumn mGap20 gap20 contact_items">
+                    <div class=" wm100 contact">
+                        <span><i class="ri-mail-line icon"></i></span>
+                        <span class="contacts_label">E-mail:</span>
+                        <span class="email_value">oumarou704910082@gmail.com</span>
+                    </div>
+    
+                    <div class=" wm100 contact">
+                        <span><i class="ri-phone-line icon"></i></i></span>
+                        <span class="contacts_label">Telephone:</span>
+                        <span class="email_value">+221 78-581-66-79</span>
+                    </div>
+    
+                    <div class=" wm100 contact">
+                        <span><i class="ri-whatsapp-line icon"></i></i></span>
+                        <span class="contacts_label">Whatsapp:</span>
+                        <span class="email_value">+221 70-491-00-82</span>
+                    </div>
+                </div>
+            
+        </div>
+
+
     </div>
+
+
 </body>
 <script src="js/app.js"></script>
 <script src="https://player.vimeo.com/api/player.js"></script>
