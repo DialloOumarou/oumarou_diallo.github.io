@@ -107,11 +107,11 @@ p{
   column-gap: .25rem;
 }
 /*=============== BUTTONS ===============*/
-.button{
+.download_btn{
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
-  background-color: var(--first-color);
+  background-color: hsl(174, 63%, 62%);
   color: #fff;
   padding: 1.15rem 1.5rem;
   border-radius: .5rem;
@@ -119,13 +119,11 @@ p{
   box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
 }
 
-.button i{
-  font-size: 1.25rem;
+.download_btn:hover{
+    background-color: hsla(174, 63%, 62%, 0.753);
 }
 
-.button:hover{
-  background-color: var(--first-color-alt);
-}
+
 
 .button__small{
   padding: .75rem;
@@ -389,16 +387,21 @@ header{
 .buttons {
     margin-bottom: 20px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap; /* Permet d'aller à la ligne si nécessaire */
+    justify-content: center; /* Centre les boutons horizontalement */
+    gap: 10px; /* Espace entre les boutons */
 }
 
 .filter-btn {
     padding: 10px 20px;
-    margin: 5px;
     background-color: var(--first-color);
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Ajout d'une transition pour un effet d'hover fluide */
 }
 
 .filter-btn:hover {
@@ -679,14 +682,7 @@ header{
         font-size: 15px;
         text-overflow: ellipsis;
     }
-/* 
-    .realisations i {
-       
-        font-size: 20px;
-        padding: 5px;
-        border-radius: 5px;
-    
-    } */
+
 
     .num1{
         top: 72%;
@@ -698,9 +694,10 @@ header{
         left: 23%;
     }
 
-    #realisations{
-        width: 100%;
-        background-color: #555;
+
+    .filter-btn {
+        font-size: 14px; /* Réduit la taille du texte */
+        padding: 8px 15px; /* Réduit le padding */
     }
 
 
