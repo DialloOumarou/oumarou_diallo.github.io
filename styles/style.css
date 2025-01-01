@@ -39,6 +39,7 @@ body{
 .slider {
     width: 100%;
     min-height: 80vh;
+    height: 600px;
     background-image: url('../img/slider.jpg'); /* Chemin de l'image */
     background-size: cover; /* L'image couvre tout le conteneur */
     background-position: center; /* Centrer l'image */
@@ -295,6 +296,10 @@ p{
     flex-wrap: wrap;
 }
 
+.burger_icon{
+    background-color: #f0eeee;
+}
+
 .icon{
     display: block;
     font-size: 1.5rem !important;
@@ -326,7 +331,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background: #fff;
+    background-color: #f0eeee;
     z-index: 999;
     padding-block: 10px;
     box-shadow: 1px 1px 25px rgba(0,0,0,0.8);
@@ -439,7 +444,7 @@ header{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -710,6 +715,7 @@ header{
 
     .card-container {
         grid-template-columns: 1fr; /* Une seule colonne sur très petits écrans */
+        width: 80%;
     }
 
     /* .card {
