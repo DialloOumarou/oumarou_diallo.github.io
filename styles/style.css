@@ -548,6 +548,12 @@ header{
     text-align: center;
 }
 
+
+footer{
+    margin-top: 150px;
+    margin-bottom: 5px;
+}
+
 @media(max-width:810px){
     header{
         height: 55px;
